@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources | AI Hustle Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="resources.css" />
+  <style>
+    .resources-page {
+  padding-top: 6rem;
+  color: white;
+  background: #0e0e0e;
+  min-height: 100vh;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.resource-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: 0.4s ease;
+}
+
+.resource-card:hover {
+  transform: scale(1.03);
+  border-color: #0ff;
+  box-shadow: 0 0 15px #0ff2;
+}
+
+.btn-download {
+  margin-top: 1rem;
+  display: inline-block;
+  background: var(--gradient);
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+   <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">AI Hustle Hub</h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">AI Tools</a></li>
+          <li><a href="tutorials.html" class="active">Tutorials</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="resources-page container">
+    <h2 class="section-title">Free Downloads & Templates</h2>
+    <div class="resource-grid">
+      <div class="resource-card">
+        <h3>Ultimate Prompt Pack</h3>
+        <p>50+ prompts to launch your AI content engine.</p>
+        <a href="#" class="btn-download">⬇ Download</a>
+      </div>
+      <div class="resource-card">
+        <h3>Notion Side-Hustle Kit</h3>
+        <p>All-in-one Notion dashboard to run your gig.</p>
+        <a href="#" class="btn-download">⬇ Download</a>
+      </div>
+      <div class="resource-card">
+        <h3>AI Content Planner</h3>
+        <p>Weekly planner to automate content output.</p>
+        <a href="#" class="btn-download">⬇ Download</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">...</footer>
+</body>
+</html>
+

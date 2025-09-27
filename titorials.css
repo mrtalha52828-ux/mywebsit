@@ -1,0 +1,13 @@
+.tutorials-page { padding-top: 6rem; background: #0f0f0f; color: #fff; min-height: 100vh; }
+.tutorial-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; padding: 3rem 0; }
+.tutorial-card {
+  background: #111; padding: 2rem; border-radius: 10px; transition: transform 0.4s, box-shadow 0.4s;
+}
+.tutorial-card:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 10px 20px rgba(0,255,255,0.2);
+}
+.tutorial-card h3 { font-size: 1.5rem; color: #0ff; margin-bottom: 0.5rem; }
+.tutorial-card p { margin-bottom: 1rem; }
+@media(min-width:768px){ .tutorial-grid { grid-template-columns: repeat(2,1fr); } }
+@media(min-width:992px){ .tutorial-grid { grid-template-columns: repeat(3,1fr); } }

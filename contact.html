@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> ... <title>Contact | AI Hustle Hub</title> 
+    <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-page {
+  padding-top: 6rem;
+  background: radial-gradient(circle at top, #0ff2, #0d0d0d 80%);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #0ff4;
+  padding: 0.75rem;
+  color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+.form-btn {
+  background: var(--gradient);
+  padding: 0.75rem 1.5rem;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.about-box {
+  background: #111;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+@media(min-width: 768px){
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+   <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">AI Hustle Hub</h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">AI Tools</a></li>
+          <li><a href="tutorials.html" class="active">Tutorials</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contact-page container">
+    <h2 class="section-title">Let's Talk</h2>
+    <div class="contact-grid">
+      <form class="contact-form">
+        <label>Name<input type="text" required></label>
+        <label>Email<input type="email" required></label>
+        <label>Message<textarea required rows="5"></textarea></label>
+        <button type="submit" class="form-btn">Send Message</button>
+      </form>
+      <div class="about-box">
+        <h3>About AI Hustle Hub</h3>
+        <p>We're helping solopreneurs launch, automate, and scale smart businesses with AI—faster and better.</p>
+        <p>📍 Remote Worldwide</p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">...</footer>
+</body>
+</html>

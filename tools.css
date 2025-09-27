@@ -1,0 +1,87 @@
+/* ===== Tools Page Specific Styles ===== */
+
+.tools-page {
+  padding-top: 6rem;
+  background: #0f0f0f;
+  min-height: 100vh;
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0ff;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: #111;
+  color: #0ff;
+  border: 1px solid #0ff;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--primary);
+  color: black;
+}
+
+/* Tool Cards */
+.tool-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+.tool-card {
+  background: #1a1a1a;
+  border-left: 5px solid transparent;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-card:hover {
+  border-left-color: #0ff;
+  transform: translateY(-5px) scale(1.02);
+  background: #222;
+}
+
+.tool-card h3 {
+  font-size: 1.5rem;
+  color: #0ff;
+}
+
+.tool-card .card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #1e90ff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+  .tool-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .tool-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

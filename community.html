@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> ... <title>Community | AI Hustle Hub</title> 
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .community-page {
+  padding-top: 6rem; 
+  background: #040404;
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+
+.thread-container {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.thread-card {
+  background: #161616;
+  border: 1px solid #0ff2;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.thread-card:hover {
+  background: #1f1f1f;
+  border-color: #0ff;
+  box-shadow: 0 0 10px #0ff3;
+}
+
+.btn-thread {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--gradient);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+   <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">AI Hustle Hub</h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">AI Tools</a></li>
+          <li><a href="tutorials.html" class="active">Tutorials</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="community-page container">
+    <h2 class="section-title">Join the Conversation</h2>
+    <div class="thread-container">
+      <div class="thread-card">
+        <h3>Best AI tools for video editing?</h3>
+        <p>Last reply: 2h ago • 💬 14 replies</p>
+      </div>
+      <div class="thread-card">
+        <h3>My side hustle scaled to $5K/month</h3>
+        <p>Posted by @startupgenius • 💬 9 replies</p>
+      </div>
+    </div>
+    <div class="new-thread">
+      <a href="#" class="btn-thread">+ Start New Thread</a>
+    </div>
+  </main>
+  <footer class="footer">...</footer>
+</body>
+</html>

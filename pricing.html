@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> ... <title>Pricing | AI Hustle Hub</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+    .pricing-page {
+  padding-top: 6rem;
+  background: #0a0a0a;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.pricing-table {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2rem;
+}
+
+.plan-card {
+  background: #121212;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  border-color: #0ff;
+  box-shadow: 0 10px 30px #0ff3;
+}
+
+.plan-card.highlight {
+  background: #1e1e1e;
+  border: 2px solid #0ff;
+}
+
+.plan-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--gradient);
+  color: #9d86f1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  </style>
+ </head>
+<body>
+   <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">AI Hustle Hub</h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">AI Tools</a></li>
+          <li><a href="tutorials.html" class="active">Tutorials</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="pricing-page container">
+    <h2 class="section-title">Choose Your Plan</h2>
+    <div class="pricing-table">
+      <div class="plan-card">
+        <h3>Starter</h3>
+        <p>$0 / mo</p>
+        <ul><li>Basic Tools</li><li>Forum Access</li></ul>
+        <a href="#" class="plan-btn">Get Started</a>
+      </div>
+      <div class="plan-card highlight">
+        <h3>Pro</h3>
+        <p>$29 / mo</p>
+        <ul><li>All Tools</li><li>Pro Tutorials</li><li>Live Q&A</li></ul>
+        <a href="#" class="plan-btn">Go Pro</a>
+      </div>
+      <div class="plan-card">
+        <h3>Elite</h3>
+        <p>$99 / mo</p>
+        <ul><li>Team Access</li><li>Private Coaching</li></ul>
+        <a href="#" class="plan-btn">Contact</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">...</footer>
+</body>
+</html>
